@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/5c963f5577.js" crossorigin="anonymous"></script>
+    <title>Услуги</title>
+    <link rel="shortcut icon" href="techolab.png" type="image/png">
+    <link rel="icon" href="techolab.png" type="image/png">
+</head>
+<body>
+    <div id="Sidenav" class="sidenav min-vh-100 d-flex" aria-hidden='true'>
+        <div class='m-auto w-75 text-light'>
+            <a class="closebtn" onclick="closeNav()">&times;</a>
+            <a href='index.html' onclick="closeNav()">На главную</a>
+            <a class='border-top border-dark' href="projects.html">Разработки</a>
+            <a class='border-top border-dark' href="services.html">Услуги</a>
+            <a class='border-top border-dark' href="contacts.html">Контакты</a>
+            <a class='phone-number font-weight-light mt-3'>+7(999)999-99-99</a>
+        </div>
+    </div>
+    <nav class="navbar sticky-top navbar-expand-md navbar-dark bg-success">
+        <div class="container">
+            <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="projects.html">Разработки</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="services.html">Услуги</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacts.html">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="mr-auto order-0">
+                <a class="navbar-brand mx-auto font-weight-bold" href="index.html">Techolab</a>
+            </div>
+            <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="btn btn-success text-light font-weight-bold" href="contacts.html">Свяжитесь с нами</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="order-0">
+                <button class="navbar-toggler" type="button" onclick="openNav()">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+    <div class="d-flex h-65m bg-success">
+        <div class="m-auto">
+            <h1 class="display-3 font-weight-bold text-light">Услуги</h1>
+        </div>
+    </div>
+    <div class="d-flex min-vh-100">
+        <div class="m-auto container py-5">
+            <div class="row justify-content-center mx-3 mx-md-0 mt-xl-0 mt-4">
+                <div class="card border-0 px-0 col-xl mt-xl-0 mt-4">
+                    <div class="card-body p-0">
+                        <h4 class="card-title font-weight-bold text-success">Разработка 1С</h4>
+                        <div class="card-text border-spec mx-0 pt-4">
+                            <h5 class="col-12 px-0 font-weight-light">Доработка типовых конфигураций</h5>
+                        </div>
+                        <div class="card-text pt-3 row">
+                            <h5 class="col-12 align-self-center font-weight-light">Создание новых отчетов и обработок</h5>
+                        </div>
+                        <div class="card-text pt-3 row">
+                            <h5 class="col-12 font-weight-light">Разработка конфигураций с нуля</h5>
+                        </div>
+                        <div class="card-text pt-3 row">
+                            <h5 class="col-12 font-weight-light">Интеграция 1С с сайтами, личными кабинетами</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="card border-0 px-0 col-xl mt-xl-0 mt-4 mx-xl-5 mx-0">
+                    <div class="card-body p-0">
+                        <h4 class="card-title font-weight-bold text-success">Веб-разработка</h4>
+                        <div class="card-text border-spec mx-0 pt-4">
+                            <h5 class="col-12 px-0 font-weight-light">Landing page с нуля</h5>
+                        </div>
+                        <div class="card-text pt-3 row">
+                            <h5 class="col-12 align-self-center font-weight-light">Дизайн</h5>
+                        </div>
+                        <div class="card-text pt-3 row">
+                            <h5 class="col-12 font-weight-light">Front-end и back-end разработка</h5>
+                        </div>
+                        <div class="card-text pt-3 row">
+                            <h5 class="col-12 font-weight-light">Мобильная разработка</h5>
+                        </div>
+                        <div class="card-text pt-3 row">
+                            <h5 class="col-12 font-weight-light">Тестирование</h5>
+                        </div>
+                        <div class="card-text pt-3 row">
+                            <h5 class="col-12 font-weight-light">Разработка интерфейсов</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="card border-0 px-0 col-xl mt-xl-0 mt-4">
+                    <div class="card-body p-0">
+                        <h4 class="card-title font-weight-bold text-success">Разработка печатных плат</h4>
+                        <div class="card-text border-spec mx-0 pt-4 row">
+                            <h5 class="col-12 px-0 font-weight-light">Проектирование и разработка печатных плат</h5>
+                        </div>
+                        <div class="card-text pt-3 row">
+                            <h5 class="col-12 align-self-center font-weight-light">Интеграция контроллеров с 1С и веб приложениями</h5>
+                        </div>
+                        <div class="card-text py-3 row">
+                            <h5 class="col-12 font-weight-light">Создание новых устройств</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mx-3 mx-md-0 mt-xl-4 mt-0 mr-xl-5 mr-0">
+                <div class="card border-0 px-0 col-xl-4 mt-xl-0 mt-4">
+                    <div class="card-body p-0">
+                        <h4 class="card-title font-weight-bold text-success">Сопровождение баз данных 1С и сайтов</h4>
+                        <div class="card-text border-spec mx-0 pt-4 row">
+                            <h5 class="col-12 px-0 font-weight-light">Развитие веб-проектов</h5>
+                        </div>
+                        <div class="card-text pt-3 row">
+                            <h5 class="col-12 align-self-center font-weight-light">Техническая поддержка и хостинг</h5>
+                        </div>
+                        <div class="card-text py-3 row">
+                            <h5 class="col-12 font-weight-light">Настройка и администрирование серверов</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="d-lg-flex h-30m pt-4 bg-dark-2 text-center text-light">
+        <div class="col-lg-4 col-12 align-self-center py-lg-0 py-5">
+            <h2 class='font-weight-light'>Techolab</h2>
+        </div>
+        <div class="col-lg-4 col-12 my-4 border-custom d-flex">
+            <div class="align-self-center mx-auto">
+                <h3 class='font-weight-light'>+7(999)999-99-99</h3>
+                <h3 class='font-weight-light'>example@gmail.com</h3>
+            </div>
+        </div>
+        <div class="col-lg-4 col-12 align-self-center py-lg-0 py-5">
+            <h2 class='font-weight-light'>г. Москва</h2>
+        </div>
+    </div>
+    <div class='text-center bg-dark-2 pb-4'>
+        <small class='text-muted'>© Techolab 2020</small>
+    </div>
+    
+    <script>
+        window.onscroll = function() {
+            if (window.pageYOffset > document.getElementsByClassName('h-65m')[0].clientHeight) {
+                $('nav').removeClass('navbar-dark bg-dark').addClass('navbar-light bg-light');
+            } else {
+                $('nav').removeClass('navbar-light bg-light').addClass('navbar-dark bg-success');
+            }
+        }
+    </script>
+    <script src='script.js'></script>
+</body>
+</html>

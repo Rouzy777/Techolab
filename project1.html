@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <title>Разработка</title>
+    <link rel="shortcut icon" href="techolab.png" type="image/png">
+    <link rel="icon" href="techolab.png" type="image/png">
+</head>
+<body>
+    <div id="Sidenav" class="sidenav min-vh-100 d-flex" aria-hidden='true'>
+        <div class='m-auto w-75 text-light'>
+            <a class="closebtn" onclick="closeNav()">&times;</a>
+            <a href='index.html' onclick="closeNav()">На главную</a>
+            <a class='border-top border-dark' href="projects.html">Разработки</a>
+            <a class='border-top border-dark' href="services.html">Услуги</a>
+            <a class='border-top border-dark' href="contacts.html">Контакты</a>
+            <a class='phone-number font-weight-light mt-3'>+7(999)999-99-99</a>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-md navbar-dark bg-img-1">
+        <div class="container">
+            <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="projects.html">Разработки</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Услуги</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacts.html">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="mr-auto order-0">
+                <a class="navbar-brand mx-auto font-weight-bold" href="index.html">Techolab</a>
+            </div>
+            <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="btn btn-success text-light font-weight-bold" href="contacts.html">Свяжитесь с нами</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="order-0">
+                <button class="navbar-toggler" type="button" onclick="openNav()">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+    <div class="d-flex h-65m bg-img-1">
+        <div class="m-auto text-center">
+            <h1 class="font-weight-bold text-light">Расширение по закрытию 70 счета</h1>
+            <h2 class="font-weight-light mt-4 text-light">для БП 3.0</h2>
+        </div>
+    </div>
+    <div class="d-flex py-lg-0 py-5 h-65m">
+        <div class="m-auto container row">
+            <div class="col-lg-4 col-12">
+                <div>
+                    <h5 class="font-weight-bold">Технологии</h5>
+                    <h5 class="font-weight-light mt-2">Lorem ipsum dolor.</h5>
+                </div>
+                <div class='mt-4'>
+                    <h5 class="font-weight-bold">Сроки</h5>
+                    <h5 class="font-weight-light mt-2">Lorem ipsum dolor.</h5>
+                </div>
+            </div>
+            <div class="col-lg-8 col-12 mt-lg-0 mt-4">
+                <h5 class="font-weight-bold">О разработке</h5>
+                <p class='font-weight-light' style='font-size: 22px'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam temporibus voluptatem, laboriosam labore! Quibusdam beatae tempore similique quo sapiente optio aut dolor? Aut culpa, omnis consequuntur animi? Blanditiis cumque deserunt, tempora assumenda vitae minus ratione velit ullam enim eveniet amet iusto impedit, dolorem necessitatibus quo nulla, quae tenetur omnis rerum, dolor! Nostrum ea, recusandae maxime soluta qui saepe quidem quaerat fuga nihil quibusdam! Accusantium ipsum similique blanditiis quo ipsa delectus labore commodi perferendis officiis assumenda? Quo officia tempore accusantium ab.</p>
+            </div>
+        </div>
+    </div>
+    <div class="d-lg-flex h-30m bg-dark-2 pt-4 text-center text-light">
+        <div class="col-lg-4 col-12 align-self-center py-lg-0 py-5">
+            <h2 class='font-weight-light'>Techolab</h2>
+        </div>
+        <div class="col-lg-4 col-12 my-4 border-custom d-flex">
+            <div class="align-self-center mx-auto">
+                <h3 class='font-weight-light'>+7(999)999-99-99</h3>
+                <h3 class='font-weight-light'>example@gmail.com</h3>
+            </div>
+        </div>
+        <div class="col-lg-4 col-12 align-self-center py-lg-0 py-5">
+            <h2 class='font-weight-light'>г. Москва</h2>
+        </div>
+    </div>
+    <div class='text-center bg-dark-2 pb-4'>
+        <small class='text-muted'>© Techolab 2020</small>
+    </div>
+
+    <script src='script.js'></script>
+</body>
+</html>

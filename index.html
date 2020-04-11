@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+    <link rel="shortcut icon" href="techolab.png" type="image/png">
+    <link rel="icon" href="techolab.png" type="image/png">
+    <title>Techolab</title>
+</head>
+<body>
+    <div id="Sidenav" class="sidenav min-vh-100 d-flex" aria-hidden='true'>
+        <div class='m-auto w-75 text-light'>
+            <a class="closebtn" onclick="closeNav()">&times;</a>
+            <a onclick="closeNav()">На главную</a>
+            <a class='border-top border-dark' href="projects.html">Разработки</a>
+            <a class='border-top border-dark' href="services.html">Услуги</a>
+            <a class='border-top border-dark' href="contacts.html">Контакты</a>
+            <a class='phone-number font-weight-light mt-3' href="#contacts">+7(999)999-99-99</a>
+        </div>
+    </div>
+    <div id="large-header" class="large-header min-vh-100">
+        <canvas class='bg-grad min-vh-100' id="demo-canvas"></canvas>
+        <div class="abs-block">
+            <h6 class='text-uppercase title-light'>ваша идея в жизнь</h6>
+            <h1 class="display-3 font-weight-bold">Techolab</h1>
+        </div>
+        <a class='linka' href='#next'><div class="arrow"></div></a>
+    </div>
+    <div>
+        <nav class="navbar sticky-top navbar-expand-md navbar-light bg-light">
+            <div class="container">
+                <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="projects.html">Разработки</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html">Услуги</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacts.html">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mr-auto order-0">
+                    <a class="navbar-brand mx-auto font-weight-bold">Techolab</a>
+                </div>
+                <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="btn btn-success text-light font-weight-bold" href="#contacts">Свяжитесь с нами</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="order-0">
+                    <button class="navbar-toggler" type="button" onclick="openNav()">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+        <section id='next' class="h-65m d-flex">
+            <div class="mx-auto mt-special row container pb-5 px-0 w-100">
+                <div class="col-lg-8 col-12">
+                    <h1 class='first-title font-weight-bold text-uppercase display-3'>Реализация <br> абсолютно всех <br> ваших проектов</h1>
+                </div>
+                <div class="col-lg-4 col-12 mt-lg-0 mt-4 pb-lg-0 pb-4" id='accordion'>
+                    <div data-toggle="collapse" data-target="#collapse1" class='services-block us-none row'>
+                        <h3 class="col-10 font-weight-bold">Разработка 1С</h3>
+                        <h3 class="col-2 text-primary plus-minus-toggle collapsed"></h3>
+                    </div>
+                    <div data-parent="#accordion" class="collapse mt-2" id="collapse1">
+                        <h6 class="font-weight-light">Доработка типовых конфигураций</h6>
+                        <h6 class="font-weight-light">Создание новых отчетов и обработок</h6>
+                        <h6 class="font-weight-light">Разработка конфигураций с нуля</h6>
+                        <h6 class="font-weight-light">Интеграция 1С с сайтами, личными кабинетами</h6>
+                    </div>
+                    <div data-toggle="collapse" data-target="#collapse2" class='services-block row us-none mt-4'>
+                        <h3 class="col-10 font-weight-bold">Веб-разработка</h3>
+                        <h3 class="col-2 text-primary plus-minus-toggle collapsed"></h3>
+                    </div>
+                    <div data-parent="#accordion" class="collapse mt-2" id="collapse2">
+                        <h6 class="font-weight-light">Landing page с нуля</h6>
+                        <h6 class="font-weight-light">Дизайн</h6>
+                        <h6 class="font-weight-light">Front-end и back-end разработка</h6>
+                        <h6 class="font-weight-light">Мобильная разработка</h6>
+                        <h6 class="font-weight-light">Тестирование</h6>
+                        <h6 class="font-weight-light">Разработка интерфейсов</h6>
+                    </div>
+                    <div data-toggle="collapse" data-target="#collapse3" class='services-block row us-none mt-4'>
+                        <h3 class="col-10 font-weight-bold">Разработка печатных плат</h3>
+                        <h3 class="col-2 text-primary plus-minus-toggle collapsed"></h3>
+                    </div>
+                    <div data-parent="#accordion" class="collapse mt-2" id="collapse3">
+                        <h6 class="font-weight-light">Проектирование и разработка печатных плат</h6>
+                        <h6 class="font-weight-light">Интеграция контроллеров с 1С и веб приложениями</h6>
+                        <h6 class="font-weight-light">Создание новых устройств</h6>
+                    </div>
+                    <div data-toggle="collapse" data-target="#collapse4" class='services-block row us-none mt-4'>
+                        <h3 class="col-10 font-weight-bold">Сопровождение баз данных 1С и сайтов</h3>
+                        <h3 class="col-2 text-primary plus-minus-toggle collapsed"></h3>
+                    </div>
+                    <div data-parent="#accordion" class="collapse mt-2" id="collapse4">
+                        <h6 class="font-weight-light">Развитие веб-проектов</h6>
+                        <h6 class="font-weight-light">Техническая поддержка и хостинг</h6>
+                        <h6 class="font-weight-light">Настройка и администрирование серверов</h6>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="h-80m py-lg-0 py-5 bg-light d-flex">
+            <div class="m-auto container w-100">
+                <h1 class='abs-title font-weight-bold text-center mb-5'>Почему мы?</h1>
+                <div class="mx-0 text-center hw-box row">
+                    <div class="col-12 my-2 my-lg-0 mr-lg-2 col-lg">
+                        <img width='110' height="110" src="https://img.icons8.com/cotton/340/000000/conference.png" alt='Технически продвинутая команда'>
+                        <hr>
+                        <p>Технически продвинутая команда</p>
+                    </div>
+                    <div class="col-12 my-2 my-lg-0 mx-lg-2 col-lg">
+                        <img width='110' height="110" src="https://img.icons8.com/color/350/000000/bullish.png" alt='Повышение привлекательности ваших услуг'>
+                        <hr>
+                        <p>Повышение привлекательности ваших услуг</p>
+                    </div>
+                    <div class="col-12 my-2 my-lg-0 mx-lg-2 col-lg">
+                        <img width='110' height="110" src="https://img.icons8.com/cotton/340/000000/love-time.png" alt='Делаем в срок. Ценим ваше время'>
+                        <hr>
+                        <p>Делаем в срок. Ценим ваше время</p>
+                    </div>
+                    <div class="col-12 my-2 my-lg-0 mx-lg-2 col-lg">
+                        <img width='110' height="110" src="https://img.icons8.com/color/350/000000/ruble.png" alt='Лучшие цены на рынке'>
+                        <hr>
+                        <p>Лучшие цены на рынке</p>
+                    </div>
+                    <div class="col-12 my-2 my-lg-0 ml-lg-2 col-lg">
+                        <img width='110' height="110" src="https://img.icons8.com/color/350/000000/settings.png" alt='Эффективность работы'>
+                        <hr>
+                        <p>Эффективность работы</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="h-65m d-flex bg-white pb-lg-0 pb-4">
+            <div class="container align-self-center py-5 text-center">
+                <div class="row">
+                    <div id="carouselExampleIndicators" class="carousel w-100 mx-auto slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active bg-dark"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1" class='bg-dark'></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2" class='bg-dark'></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <h1 class='abs-title font-weight-bold abs-title-s text-dark mb-0'>Наши клиенты</h1>
+                            <div class="mt-4 carousel-item active">
+                                <div class="d-flex h-65m">
+                                    <div class="align-self-center mx-auto">
+                                        <img width="260" class="img-fluid" src="https://rss-s.ru/local/templates/rass-s/assets/img/logos/logo_blue.svg" alt="First slide">
+                                    </div>
+                                    <div class="align-self-end">
+                                        <div class="carousel-caption rounded w-50 mx-auto py-1 mb-4">
+                                            <h4 class='font-weight-bold text-dark mb-0'>Русская горнолыжная школа</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="d-flex h-65m">
+                                    <div class="align-self-center mx-auto">
+                                        <img width="260" class="img-fluid" src="https://upload.wikimedia.org/wikipedia/ru/thumb/2/2d/Gazprom-Logo-rus.svg/694px-Gazprom-Logo-rus.svg.png" alt="First slide">
+                                    </div>
+                                    <div class="align-self-end">
+                                        <div class="carousel-caption mx-auto py-1 mb-4">
+                                            <h4 class='font-weight-bold text-dark mb-0'>Газпром</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="d-flex h-65m">
+                                    <div class="align-self-center mx-auto">
+                                        <img width="260" class="img-fluid" src="autobarius.png" alt="First slide">
+                                    </div>
+                                    <div class="align-self-end">
+                                        <div class="carousel-caption mx-auto py-1 mb-4">
+                                            <h4 class='font-weight-bold text-dark mb-0'>Autobarius</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Назад</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Вперед</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id='contacts' class="h-95m d-flex bg-light">
+            <div class="container py-4 align-self-center">
+                <div class="row rounded-spec mx-4 bg-white">
+                    <div class="col-12 col-md-6 px-0 my-0 text-center">
+                        <img width="450" src="https://img.icons8.com/nolan/550/sent.png" class='img-fluid' alt="">
+                    </div>
+                    <div class="col-12 col-md-6 pb-md-0 text-center text-md-left px-0 pb-5 mb-3 my-md-3">
+                        <h4 class='font-weight-bold'>Свяжитесь с нами</h4>
+                        <input id='name' style="font-family:Source Sans Pro, FontAwesome" placeholder=" &#xf007;  Имя" class='w-90 p-2 px-2 mt-3' autocomplete="off">
+                        <input id='email' style="font-family:Source Sans Pro, FontAwesome" placeholder=" &#xf0e0;  Электронная почта" class='w-90 p-2 px-2 my-3' autocomplete="off">
+                        <textarea id='message' placeholder=" Сообщение..." class='w-90 p-2 px-2'></textarea>
+                        <div class='text-center text-light btn-submit mx-md-0 mx-auto rounded-spec py-2 mt-2 font-weight-bold bg-warning w-90'>
+                            <span >Отправить</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="d-lg-flex h-30m pt-4 bg-dark-2 text-center text-light">
+            <div class="col-lg-4 col-12 align-self-center py-lg-0 py-5">
+                <h2 class='font-weight-light'>Techolab</h2>
+            </div>
+            <div class="col-lg-4 col-12 my-4 border-custom d-flex">
+                <div class="align-self-center mx-auto">
+                    <h3 class='font-weight-light'>+7(999)999-99-99</h3>
+                    <h3 class='font-weight-light'>example@gmail.com</h3>
+                </div>
+            </div>
+            <div class="col-lg-4 col-12 align-self-center py-lg-0 py-5">
+                <h2 class='font-weight-light'>г. Москва</h2>
+            </div>
+        </div>
+        <div class='text-center bg-dark-2 pb-4'>
+            <small class='text-muted'>© Techolab 2020</small>
+        </div>
+    </div>
+    
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenLite.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/easing/EasePack.min.js'></script>
+    <script src='demo.js'></script>
+    <script src='script.js'></script>
+</body>
+</html>
