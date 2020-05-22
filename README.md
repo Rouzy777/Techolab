@@ -1,3 +1,3 @@
 # Rouzy777  
 
-[Show work](https://rouzy777.github.io/Techolab)
+[see work](https://rouzy777.github.io/Techolab)
