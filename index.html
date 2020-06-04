@@ -4,13 +4,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="src/style.css">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
-    <link rel="shortcut icon" href="techolab.png" type="image/png">
-    <link rel="icon" href="techolab.png" type="image/png">
+    <link rel="shortcut icon" href="imgs/techolab.png" type="image/png">
+    <link rel="icon" href="imgs/techolab.png" type="image/png">
     <title>Techolab</title>
 </head>
 <body>
@@ -18,9 +18,9 @@
         <div class='m-auto w-75 text-light'>
             <a class="closebtn" onclick="closeNav()">&times;</a>
             <a onclick="closeNav()">На главную</a>
-            <a class='border-top border-dark' href="projects.html">Разработки</a>
-            <a class='border-top border-dark' href="services.html">Услуги</a>
-            <a class='border-top border-dark' href="contacts.html">Контакты</a>
+            <a class='border-top border-dark' href="./projects/index.html">Разработки</a>
+            <a class='border-top border-dark' href="./services.html">Услуги</a>
+            <a class='border-top border-dark' href="./contacts.html">Контакты</a>
             <a class='phone-number font-weight-light mt-3' href="#contacts">+7(999)999-99-99</a>
         </div>
     </div>
@@ -38,13 +38,13 @@
                 <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="projects.html">Разработки</a>
+                            <a class="nav-link" href="./projects/index.html">Разработки</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="services.html">Услуги</a>
+                            <a class="nav-link" href="./services.html">Услуги</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contacts.html">Контакты</a>
+                            <a class="nav-link" href="./contacts.html">Контакты</a>
                         </li>
                     </ul>
                 </div>
@@ -184,7 +184,7 @@
                             <div class="carousel-item">
                                 <div class="d-flex h-65m">
                                     <div class="align-self-center mx-auto">
-                                        <img width="260" class="img-fluid" src="autobarius.png" alt="First slide">
+                                        <img width="260" class="img-fluid" src="imgs/autobarius.png" alt="First slide">
                                     </div>
                                     <div class="align-self-end">
                                         <div class="carousel-caption mx-auto py-1 mb-4">
@@ -242,10 +242,10 @@
             <small class='text-muted'>© Techolab 2020</small>
         </div>
     </div>
-    
+
     <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenLite.min.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/easing/EasePack.min.js'></script>
-    <script src='demo.js'></script>
-    <script src='script.js'></script>
+    <script src='src/demo.js'></script>
+    <script src='src/script.js'></script>
 </body>
 </html>

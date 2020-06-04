@@ -4,22 +4,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="src/style.css">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/5c963f5577.js" crossorigin="anonymous"></script>
     <title>Услуги</title>
-    <link rel="shortcut icon" href="techolab.png" type="image/png">
-    <link rel="icon" href="techolab.png" type="image/png">
+    <link rel="shortcut icon" href="imgs/techolab.png" type="image/png">
+    <link rel="icon" href="imgs/techolab.png" type="image/png">
 </head>
 <body>
     <div id="Sidenav" class="sidenav min-vh-100 d-flex" aria-hidden='true'>
         <div class='m-auto w-75 text-light'>
             <a class="closebtn" onclick="closeNav()">&times;</a>
             <a href='index.html' onclick="closeNav()">На главную</a>
-            <a class='border-top border-dark' href="projects.html">Разработки</a>
-            <a class='border-top border-dark' href="services.html">Услуги</a>
-            <a class='border-top border-dark' href="contacts.html">Контакты</a>
-            <a class='phone-number font-weight-light mt-3'>+7(999)999-99-99</a>
+            <a class='border-top border-dark' href="./projects/index.html">Разработки</a>
+            <a class='border-top border-dark' href="./services.html">Услуги</a>
+            <a class='border-top border-dark' href="./contacts.html">Контакты</a>
+            <a href='tel:+79999999999' class='phone-number font-weight-light mt-3'>+7(999)999-99-99</a>
         </div>
     </div>
     <nav class="navbar sticky-top navbar-expand-md navbar-dark bg-success">
@@ -27,13 +27,13 @@
             <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="projects.html">Разработки</a>
+                        <a class="nav-link" href="./projects/index.html">Разработки</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="services.html">Услуги</a>
+                        <a class="nav-link active" href="./services.html">Услуги</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contacts.html">Контакты</a>
+                        <a class="nav-link" href="./contacts.html">Контакты</a>
                     </li>
                 </ul>
             </div>
@@ -152,7 +152,7 @@
     <div class='text-center bg-dark-2 pb-4'>
         <small class='text-muted'>© Techolab 2020</small>
     </div>
-    
+
     <script>
         window.onscroll = function() {
             if (window.pageYOffset > document.getElementsByClassName('h-65m')[0].clientHeight) {
@@ -162,6 +162,6 @@
             }
         }
     </script>
-    <script src='script.js'></script>
+    <script src='src/script.js'></script>
 </body>
 </html>
